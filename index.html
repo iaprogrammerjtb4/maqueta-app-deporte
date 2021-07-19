@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Dependences/css/bootstrap.min.css"/>
+
+    <title>SportJei</title>
+  </head>
+  <body>
+    <h1 class="text-center text-primary">exercises management</h1>    
+    <section class="container">
+      <section class="btn-group">
+        <button type="button" class="btn-primary" data-toggle="modal" data-target="#newRoutine">Create new</button>        
+        <button class="btn btn-info" data-toggle="modal" data-target="#searchRoutine">Search routine</button>
+        <button class="btn btn-secondary" data-toggle="modal" data-target="#listRoutine">Views alls routines done</button>
+      </section>
+      <div class="row">
+        <div class="col-sm-6 col-12">
+          <div class="mt-5 mb-5">
+            <h3 class="text-center text-info">Now...</h3>
+            <div class="card" style="width:100%;">
+              <img src="https://miro.medium.com/max/2800/1*XufkfhkZ4oztZp_g53GNPQ.jpeg" alt="monday" class="card-img-top" style="width:100%; opacity: 0.4;" />
+              <div class="card-body">
+                <h4 class="card-title">Rutine legs</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis ut delectus dolorum officiis soluta in culpa rem! Sunt quasi asperiores, molestias. Amet unde reprehenderit odio nihil in, aliquid voluptatum.</p>              
+              </div>
+              <button class="btn btn-info">Take photo evidence</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12">
+          <div class="mt-5 mb-5">
+            <h3 class="text-center text-info">Next...</h3>
+            <ul class="list-group">
+              <li class="list-group-item"><div class="spinner-border text-muted"></div> Routine bisepts</li>
+              <li class="list-group-item"><div class="spinner-border text-muted"></div> text-mutedRoutine bisepts</li>
+              <li class="list-group-item"><div class="spinner-border text-muted"></div> Routine bisepts</li>
+              <li class="list-group-item"><div class="spinner-border text-muted"></div> Routine bisepts</li>
+              <li class="list-group-item"><div class="spinner-border text-muted"></div> Routine bisepts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>     
+
+
+    <!--Modal section -->
+    <!-- Modal for create new routine -->
+    <div class="modal" id="newRoutine">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">          
+            <h3 class="text-title text-center text-primary">New routine register</h3>
+            <button class="close" data-dismiss="modal">&times;</button>            
+          </div>
+          <div class="modal-body">
+            <form action="" class="was-validated">
+            <div class="form group">
+              <label for="NameRoutine">Name new routine:</label>
+              <input id="NameRoutine" type="text" placeholder="Here name for routine" class="form-control" required="">
+              <div class="valid-feedback">oka...</div>
+              <div class="invalid-feedback">Please write name the routine</div>
+            </div>
+            <div class="form group">
+              <label for="DayRoutine">Day at practice:</label>
+              <select id="DayRoutine" class="form-control" required="">
+                <option value="">Select the day</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+              </select>
+              <div class="valid-feedback">oka...</div>
+              <div class="invalid-feedback">Please select the day you will practice the routine</div>
+            </div>
+            <div class="form group">
+              <label for="DescriptionRoutine">Description:</label>
+              <textarea name="DescriptionRoutine" id="DescriptionRoutine" cols="15" rows="3" class="form-control" required=""></textarea>
+              <div class="valid-feedback">oka...</div>
+              <div class="invalid-feedback">Enter the description of the routine</div>
+            </div>
+            <button class="btn btn-primary">Create</button>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for search and edit routine -->
+    <div class="modal" id="searchRoutine">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">          
+            <h3 class="text-title text-center text-primary">New routine register</h3>
+            <button class="close" data-dismiss="modal">&times;</button>            
+          </div>
+          <div class="modal-body">
+            <form action="" class="form-inline">
+              <label for="NameRoutineSearch">Search name:</label>
+              <input type="text" class="form-control" placeholder="Enter name the rutine" />
+              <button type="submit" class="btn btn-primary mt-2">Find</button>
+            </form>
+            <form action="" class="was-validated">
+              <div class="form group">
+                <label for="NameRoutine">Name new routine:</label>
+                <input id="NameRoutine" type="text" placeholder="Here name for routine" class="form-control" required="">
+                <div class="valid-feedback">oka...</div>
+                <div class="invalid-feedback">Please write name the routine</div>
+              </div>
+              <div class="form group">
+                <label for="DayRoutine">Day at practice:</label>
+                <select id="DayRoutine" class="form-control" required="">
+                  <option value="">Select the day</option>
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wednesday</option>
+                  <option value="4">Thursday</option>
+                  <option value="5">Friday</option>
+                  <option value="6">Saturday</option>
+                  <option value="7">Sunday</option>
+                </select>
+                <div class="valid-feedback">oka...</div>
+                <div class="invalid-feedback">Please select the day you will practice the routine</div>
+              </div>
+              <div class="form group">
+                <label for="DescriptionRoutine">Description:</label>
+                <textarea name="DescriptionRoutine" id="DescriptionRoutine" cols="15" rows="3" class="form-control" required=""></textarea>
+                <div class="valid-feedback">oka...</div>
+                <div class="invalid-feedback">Enter the description of the routine</div>
+              </div>
+              <button class="btn btn-primary">Create</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for list views alls routines done -->
+    <div class="modal" id="listRoutine">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Done</h3>
+            <button class="close" data-dismiss="modal">&times;</button>     
+          </div>
+          <div class="modal-body">
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <div id="searchFilter">              
+              <li class="mt-1 mb-1 list-group-item"><span>12-21-2020</span>
+                <div class="card" style="width:100%;">                  
+                  <img src="https://miro.medium.com/max/2800/1*XufkfhkZ4oztZp_g53GNPQ.jpeg" alt="monday" class="card-img-top" style="width:100%; opacity: 0.4;" />
+                  <div class="card-body">
+                    <h4 class="card-title">Rutine legs</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis ut delectus dolorum officiis soluta in culpa rem! Sunt quasi asperiores, molestias. Amet unde reprehenderit odio nihil in, aliquid voluptatum.</p>
+                  </div>                
+                </div>              
+              </li>            
+              <li class="mt-1 mb-1 list-group-item"><span>10-21-2020</span>
+                <div class="card" style="width:100%;">                  
+                  <img src="https://miro.medium.com/max/2800/1*XufkfhkZ4oztZp_g53GNPQ.jpeg" alt="monday" class="card-img-top" style="width:100%; opacity: 0.4;" />
+                  <div class="card-body">
+                    <h4 class="card-title">Rutine legs</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis ut delectus dolorum officiis soluta in culpa rem! Sunt quasi asperiores, molestias. Amet unde reprehenderit odio nihil in, aliquid voluptatum.</p>
+                  </div>                
+                </div>              
+              </li>
+              <li class="mt-1 mb-1 list-group-item"><span>08-21-2020</span>
+                <div class="card" style="width:100%;">                  
+                  <img src="https://miro.medium.com/max/2800/1*XufkfhkZ4oztZp_g53GNPQ.jpeg" alt="monday" class="card-img-top" style="width:100%; opacity: 0.4;" />
+                  <div class="card-body">
+                    <h4 class="card-title">Rutine legs</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis ut delectus dolorum officiis soluta in culpa rem! Sunt quasi asperiores, molestias. Amet unde reprehenderit odio nihil in, aliquid voluptatum.</p>
+                  </div>                
+                </div>              
+              </li>
+              <li class="mt-1 mb-1 list-group-item"><span>07-21-2020</span>
+                <div class="card" style="width:100%;">                  
+                  <img src="https://miro.medium.com/max/2800/1*XufkfhkZ4oztZp_g53GNPQ.jpeg" alt="monday" class="card-img-top" style="width:100%; opacity: 0.4;" />
+                  <div class="card-body">
+                    <h4 class="card-title">Rutine legs</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Omnis facilis ut delectus dolorum officiis soluta in culpa rem! Sunt quasi asperiores, molestias. Amet unde reprehenderit odio nihil in, aliquid voluptatum.</p>
+                  </div>                
+                </div>              
+              </li>
+            </div>
+          </div>
+          <div class="modal-footer">
+            
+          </div>
+        </div>
+      </div>
+    </div>            
+    <!-- Vue-->
+    <script src="./Dependences/js/vue.min.js"></script>
+    <script src="./Dependences/components/menu.js"></script>
+    <script src="./Dependences/components/header.js"></script>
+    <script src="./Dependences/components/next.js"></script>
+    <script src="./Dependences/components/now.js"></script>
+    <script src="./Dependences/components/home.js"></script>
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./Dependences/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./Dependences/js/popper.min.js"></script>
+    <script src="./Dependences/js/bootstrap.min.js"></script>
+
+    <!-- filter script now-->
+    <script>
+      new Vue({
+        el:"#app",
+        data(){
+
+        },
+        components:{
+
+        }
+      });
+
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#searchFilter li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
